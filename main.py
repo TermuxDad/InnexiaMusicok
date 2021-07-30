@@ -20,7 +20,7 @@ bot = Client(
     Config.API_ID,
     Config.API_HASH,
     bot_token=Config.BOT_TOKEN,
-    innexiaMusic=dict(root="innexiaMusic")
+    plugins=dict(root="innexiaMusic")
 )
 if not os.path.isdir("./downloads"):
     os.makedirs("./downloads")
