@@ -1,0 +1,85 @@
+{
+  "name": "Innexia Music",
+  "description": "An Telegram Bot Maded By Mr Sammy Innexia Music/Music in Telegram Voice Chats",
+  "repository": "https://github.com/DarkCybers/InnexiaMusic",
+  "logo": "https://telegra.ph/file/a18a61abcef1937ef2d61.jpg",
+  "keywords": [
+    "telegram",
+    "bot",
+    "voicechat",
+    "music",
+    "python",
+    "pyrogram",
+    "pytgcalls",
+    "tgcalls",
+    "voip"
+  ],
+  "env": {
+    "API_ID": {
+      "description": "api_id part of your Telegram API Key from my.telegram.org/apps or @UseTGzKBot",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "api_hash part of your Telegram API Key from my.telegram.org/apps or @UseTGzKBot",
+      "required": true
+    },
+    "BOT_TOKEN": {
+      "description": "Bot token of Bot, get from @Botfather",
+      "required": true
+    },
+    "ARQ_API": {
+      "description": "get it for free from @ARQRobot",
+      "required": false
+    },
+    "SESSION_STRING": {
+      "description": "Session string, read the README to learn how to export it with Pyrogram",
+      "required": true
+    },
+    "CHAT": {
+      "description": "ID of Channel or Group where the Bot plays Music. Ex: -1001319484169",
+      "required": true
+    },
+    "LOG_GROUP": {
+      "description": "ID of the group to send playlist If CHAT is a Group, if channel thenleave blank. Ex: -1001319484169",
+      "required": false
+    },
+    "ADMINS": {
+      "description": "ID of Users who can use Admin commands(for multiple users seperated by space)",
+      "required": true
+    },
+    "ADMIN_ONLY": {
+      "description": "Pass 'Y' If you want to make /play and /deezer commands only for admins of CHAT. By default 'N' /play and /deezer is available for all.",
+      "value": "N",
+      "required": false
+    },
+    "MAXIMUM_DURATION": {
+      "description": "Maximum duration of song to be played using /play or /deezer",
+      "value": "15",
+      "required": false
+    },
+    "STREAM_URL": {
+      "description": "URL of Radio station or Youtube live video url to stream with /radio command",
+      "value": "https://youtu.be/zcrUCvBD16k",
+      "required": false
+    },
+    "REPLY_MESSAGE": {
+      "description": "A reply message to those who message the USER account in PM. Make it blank if you do not need this feature.",
+      "value": "Hello, I am a bot to play music, not havimg time to chat with you.",
+      "required": false
+    }
+  },
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    },
+    {
+      "url": "heroku/python"
+    }
+  ]
+}
