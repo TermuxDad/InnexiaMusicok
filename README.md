@@ -7,7 +7,7 @@
 ---
 
 ## Deploy To Railway
-[![Deploy+on+Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https://github.com/MrSammyXD/music&envs=API_ID,API_HASH,BOT_TOKEN,ARQ_API,SESSION_STRING,CHAT,LOG_GROUP,ADMINS,ADMIN_ONLY,MAXIMUM_DURATION,STREAM_URL,REPLY_MESSAGE )
+[![Deploy+on+Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https://github.com/DarkCyberS/InnexiaMusic&envs=API_ID,API_HASH,BOT_TOKEN,ARQ_API,SESSION_STRING,CHAT,LOG_GROUP,ADMINS,ADMIN_ONLY,MAXIMUM_DURATION,STREAM_URL,REPLY_MESSAGE )
 
 ___
 
